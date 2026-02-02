@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './new-account.html',
   styleUrl: './new-account.css',
+  standalone: true,
 })
 export class NewAccount {
 
