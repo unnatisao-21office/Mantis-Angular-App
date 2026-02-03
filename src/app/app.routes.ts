@@ -3,6 +3,7 @@ import { Routes } from '@angular/router';
 import { Login } from './pages/login/login';
 import { NewAccount } from './pages/new-account/new-account';
 import { ForgetPassword } from './pages/forget-password/forget-password';
+import { CheckEmail } from './pages/check-email/check-email';
 
 export const routes: Routes = [
     {
@@ -14,5 +15,8 @@ export const routes: Routes = [
     },{
         path: 'forgot-password',
         component: ForgetPassword
+    },{
+        path: 'check-email',
+        component: CheckEmail
     }
 ];

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from "@angular/router";
+import { Router , RouterLink, RouterOutlet } from "@angular/router";
 
 @Component({
   selector: 'app-forget-password',
@@ -9,5 +9,9 @@ import { RouterLink, RouterOutlet } from "@angular/router";
   standalone: true,
 })
 export class ForgetPassword {
-
+  constructor(private router: Router) {}
+  
+  goToCheckEmail() {
+    this.router.navigate(['/check-email']);
+  }
 }
