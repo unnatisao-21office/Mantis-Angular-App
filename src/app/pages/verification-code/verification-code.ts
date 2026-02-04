@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class VerificationCode {
   constructor(private router: Router) {}
+  
 
 
   resendCode() {
