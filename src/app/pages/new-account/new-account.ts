@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import {  RouterLink, RouterOutlet } from '@angular/router';
+import {  RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-new-account',
-  imports: [RouterOutlet,RouterLink],
+  imports: [RouterLink],
   templateUrl: './new-account.html',
   styleUrl: './new-account.css',
   standalone: true,

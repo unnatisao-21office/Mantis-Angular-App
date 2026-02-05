@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { RouterLink, Router } from "@angular/router";
 import { FormsModule } from '@angular/forms';
+import { Services } from '../../service/services';
 @Component({
   selector: 'app-login',
   imports: [FormsModule, RouterLink],
@@ -16,20 +16,18 @@ export class Login {
   keepMeSignedIn = false;
 
   constructor(
-    private http: HttpClient,
+    private services: Services,
     private router: Router
   ) {}
 
   login() {
-    this.http.post('http://localhost:3000/api/auth/login', {
+    this.services.login({
       email: this.email,
       password: this.password,
-      rememberMe: this.rememberMe
+      rememberMe: this.rememberMe,
     }).subscribe({
-      next: (res: any) => {
+      next: () => {
         alert('Login successful');
-
-       
         this.router.navigate(['/dashboard']);
       },
       error: (err) => {
