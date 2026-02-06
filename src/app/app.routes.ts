@@ -6,6 +6,7 @@ import { ForgetPassword } from './pages/forget-password/forget-password';
 import { CheckEmail } from './pages/check-email/check-email';
 import { ResetPassword } from './pages/reset-password/reset-password';
 import { VerificationCode } from './pages/verification-code/verification-code';
+import { ComingSoon } from './pages/coming-soon/coming-soon';
 
 export const routes: Routes = [
     {
@@ -26,5 +27,8 @@ export const routes: Routes = [
     },{
         path:'verification-code',
         component: VerificationCode
+    },{
+        path: 'coming-soon',
+        component: ComingSoon
     }
 ];
