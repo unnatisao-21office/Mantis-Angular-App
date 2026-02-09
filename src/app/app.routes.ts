@@ -7,6 +7,7 @@ import { CheckEmail } from './pages/check-email/check-email';
 import { ResetPassword } from './pages/reset-password/reset-password';
 import { VerificationCode } from './pages/verification-code/verification-code';
 import { ComingSoon } from './pages/coming-soon/coming-soon';
+import { ContactUs } from './pages/contact-us/contact-us';
 
 export const routes: Routes = [
     {
@@ -30,5 +31,8 @@ export const routes: Routes = [
     },{
         path: 'coming-soon',
         component: ComingSoon
+    },{
+        path: 'contact-us',
+        component: ContactUs
     }
 ];
