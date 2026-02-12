@@ -8,13 +8,13 @@ import { Router } from '@angular/router';
   styleUrl: './verification-code.css',
 })
 export class VerificationCode {
-  constructor(private router: Router) {}
-  
+  constructor(private router: Router) { }
+
 
 
   resendCode() {
     console.log('Resending code...');
-    
+
     alert('Verification code has been resent!');
   }
 }

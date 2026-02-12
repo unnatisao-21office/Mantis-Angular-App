@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrl: './check-email.css',
 })
 export class CheckEmail {
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   goToLogin() {
     this.router.navigate(['/login']);

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterLink, Router } from "@angular/router";
 import { FormsModule } from '@angular/forms';
 import { Services } from '../../service/services';
+
 @Component({
   selector: 'app-login',
   imports: [FormsModule, RouterLink],
@@ -10,7 +11,7 @@ import { Services } from '../../service/services';
   standalone: true,
 })
 export class Login {
-    email = '';
+  email = '';
   password = '';
   rememberMe = false;
   keepMeSignedIn = false;
@@ -18,7 +19,7 @@ export class Login {
   constructor(
     private services: Services,
     private router: Router
-  ) {}
+  ) { }
 
   login() {
     this.services.login({
@@ -34,5 +35,9 @@ export class Login {
         alert(err.error.message || 'Login failed');
       }
     });
+  }
+
+  navigateToForgetPassword() {
+    this.router.navigate(['/forget-password']);
   }
 }
