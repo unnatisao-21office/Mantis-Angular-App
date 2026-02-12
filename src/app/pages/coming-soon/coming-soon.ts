@@ -11,12 +11,12 @@ export class ComingSoon implements OnInit, OnDestroy {
   hours: number = 0;
   minutes: number = 0;
   seconds: number = 0;
-  
+
   private countdownInterval: any;
   private startTime: number;
 
   constructor(private cdr: ChangeDetectorRef) {
-    
+
     const storedStartTime = localStorage.getItem('countdownStartTime');
     if (storedStartTime) {
       this.startTime = parseInt(storedStartTime, 10);

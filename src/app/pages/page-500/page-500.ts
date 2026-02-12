@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrl: './page-500.css',
 })
 export class Page500 {
- constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   goToHome() {
     this.router.navigate(['/home']);

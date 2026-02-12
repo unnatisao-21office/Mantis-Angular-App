@@ -17,34 +17,34 @@ export const routes: Routes = [
     {
         path: 'login',
         component: Login
-    },{
+    }, {
         path: 'new-account',
         component: NewAccount
-    },{
+    }, {
         path: 'forgot-password',
         component: ForgetPassword
-    },{
+    }, {
         path: 'check-email',
         component: CheckEmail
-    },{
+    }, {
         path: 'reset-password',
         component: ResetPassword
-    },{
-        path:'verification-code',
+    }, {
+        path: 'verification-code',
         component: VerificationCode
-    },{
+    }, {
         path: 'coming-soon',
         component: ComingSoon
-    },{
+    }, {
         path: 'contact-us',
         component: ContactUs
-    },{
+    }, {
         path: 'home',
         component: Home
-    },{
+    }, {
         path: 'page-404',
         component: Page404
-    },{
+    }, {
         path: 'page-500',
         component: Page500
     },
